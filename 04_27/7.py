@@ -13,3 +13,18 @@ temp.append(valortemperatura)
 while valortemperatura >=0:
   valortemperatura = int(input("digite uma temperatura"))
   temp.append(valortemperatura)
+for x in temp:
+  if x <10:
+    clas.append("frio")
+  elif x >=10 and x <=30:
+    clas.append("agradável")
+  elif x >30 and x <=60:
+    clas.append("quente")
+  else:
+    print("valor fora do valor plausível, ignorando valor")
+print("temperaturas: ", temp)
+print("classificação: ", clas)
+print("quantidade de ocorrências em cada categoria: ")
+print("frio: ", clas.count("frio"))
+print("agradável: ", clas.count("agradável"))
+print("quente: ", clas.count("quente"))

@@ -1,13 +1,16 @@
-lista_A= []
-for i in range(10):  
-  lista_A.append(int(input("Digite um número inteiro: ")))
-print("lista A: ", lista_A)
+# 2) Elaborar um programa em que o usuário deva preencher uma lista com 30 números. Após o
+# preenchimento o programa deve calcular a média dos números inseridos. Logo em seguida, o programa
+# deve salvar em outra lista somente os números que são maiores que a média. Exibir no final a lista dos
+# números maiores que a média.
+lista = []
+maioresmedia=[]
+for x in range(3):
+    valor = int(input("Digite um número inteiro: "))
+    lista.append(valor)
 
+media = sum(lista) / len(lista)
+for valor in lista:
+    if valor > media:
+        maioresmedia.append(valor)
 
-lista_B = []
-for num in lista_A:
-  if num % 2 == 0:
-    lista_B.append(num**2)
-  else:
-    lista_B.append(num**3)
-print("lista B: ", lista_B)
+print("Lista dos números maiores que a média:", maioresmedia)
