@@ -1,0 +1,10 @@
+# 1) Elaborar um programa para adicionar um novo par chave-valor ao dicionário, modificar um valor existente e
+# acessar uma chave específica.
+dados ={
+    "nome": "João",
+    "idade": 30,
+    "cidade": "São Paulo"
+}
+dados.update({"celular": 11943922328})
+dados["idade"] = 31
+print(dados["nome"])
