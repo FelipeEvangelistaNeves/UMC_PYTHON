@@ -3,3 +3,7 @@
 # exiba todas as chaves que possuem esse valor; caso não exista, exiba uma 
 # mensagem indicando que o valor não foi encontrado.
 
+from dados import dados
+chaves= {}
+for chave,val in dados.items():
+  

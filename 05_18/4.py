@@ -2,10 +2,9 @@
 # preservando seu valor associado e mantendo o restante do dicionário inalterado. 
 # Exibir o novo dicionário.
 
-dados ={
-    "nome": "João",
-    "idade": 30,
-    "cidade": "São Paulo"
-}
-nova_chave = input("Digite a nova chave para renomear 'nome': ")
-dados[nova_chave]=dados.pop
+from dados import dados
+qual_chave = input("Digite qual chave deseja renomear")
+nova_chave=input("qual nome voce deseja dar a nova chave")
+dados[nova_chave]=dados.pop(qual_chave)
+print(dados[nova_chave])
+print(dados)
